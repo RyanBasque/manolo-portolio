@@ -262,18 +262,22 @@ img {
     animation: fadeInUp 1s ease-out;
 }
 
-.hero-instagram {
+.hero-social {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    color: var(--pastel-peach);
-    font-size: 0.95rem;
+    gap: 15px;
     margin-bottom: 20px;
-    font-weight: 500;
 }
 
-.hero-instagram i {
-    font-size: 1.2rem;
+.hero-social a {
+    color: var(--pastel-peach);
+    font-size: 1.3rem;
+    transition: var(--transition-fast);
+}
+
+.hero-social a:hover {
+    color: var(--pastel-yellow);
+    transform: translateY(-2px);
 }
 
 .hero-title {
@@ -1046,6 +1050,10 @@ section {
 .contato-info {
     margin-top: 40px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
 }
 
 .contato-item {
@@ -1169,7 +1177,7 @@ section {
         margin: 0 auto;
     }
     
-    .hero-instagram {
+    .hero-social {
         justify-content: center;
     }
     
