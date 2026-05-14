@@ -24,7 +24,7 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#sobre" class="nav-link">Quem Sou</a></li>
                 <li><a href="#numeros" class="nav-link">Números</a></li>
-                <li><a href="#spotify" class="nav-link">Spotify</a></li>
+                <li><a href="#spotify" class="nav-link">Lançamentos</a></li>
                 <li><a href="#youtube" class="nav-link">YouTube</a></li>
                 <li><a href="#artistas" class="nav-link">Artistas</a></li>
                 <li><a href="#servicos" class="nav-link">Serviços</a></li>
@@ -61,9 +61,7 @@
                 <a href="#contato" class="hero-cta">Vamos Conversar?</a>
             </div>
             <div class="hero-photo">
-                <div class="photo-placeholder">
-                    <span>[FOTO DO MANOLO — inserir aqui]</span>
-                </div>
+                <img src="assets/manolo.jpg" alt="Foto do Manolo Prieto">
             </div>
         </div>
         <div class="scroll-indicator">
@@ -148,107 +146,78 @@
                     <i class="fas fa-chevron-left"></i>
                 </button>
                 <div class="carousel-track" id="spotifyCarousel">
-                    <div class="spotify-card">
+                    <!-- Card 1: Pirocada Quente -->
+                    <div class="spotify-card" data-spotify-id="pirocada-quente">
                         <div class="spotify-embed">
-                            <div class="embed-placeholder">
-                                <i class="fab fa-spotify"></i>
-                                <span>[EMBED SPOTIFY — Pirocada Quente]</span>
-                                <small>Adicione o link do embed aqui</small>
-                            </div>
+                            <iframe data-testid="embed-iframe" style="border-radius:12px; overflow:hidden;" src="https://open.spotify.com/embed/track/2Z1DmmPWD3Lm0dWAxMfjxG?utm_source=generator" width="100%" height="352" frameBorder="0" scrolling="no" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="spotify-info">
                             <h3>Pirocada Quente</h3>
                             <p class="artista">MC Jvila & MC Negão Original</p>
-                            <p class="resultado">+61M plays</p>
+                            <div class="spotify-stats">
+                                <p class="resultado" data-stat="plays">+61M plays</p>
+                                <span class="stat-update" data-stat-updated>Spotify</span>
+                            </div>
                             <span class="badge">🏅 Mais de 1 mês no Top 50 Spotify</span>
                         </div>
                     </div>
-                    <div class="spotify-card">
+                    <!-- Card 2: Mãe Solteira -->
+                    <div class="spotify-card" data-spotify-id="mae-solteira">
                         <div class="spotify-embed">
-                            <div class="embed-placeholder">
-                                <i class="fab fa-spotify"></i>
-                                <span>[EMBED SPOTIFY — EP Three Single]</span>
-                                <small>Adicione o link do embed aqui</small>
-                            </div>
-                        </div>
-                        <div class="spotify-info">
-                            <h3>EP Three Single</h3>
-                            <p class="artista">—</p>
-                            <p class="resultado">+18M plays</p>
-                        </div>
-                    </div>
-                    <div class="spotify-card">
-                        <div class="spotify-embed">
-                            <div class="embed-placeholder">
-                                <i class="fab fa-spotify"></i>
-                                <span>[EMBED SPOTIFY — Mãe Solteira]</span>
-                                <small>Adicione o link do embed aqui</small>
-                            </div>
+                            <iframe data-testid="embed-iframe" style="border-radius:12px; overflow:hidden;" src="https://open.spotify.com/embed/track/4Hk1gmBr2KVEXr3hHwSgUi?utm_source=generator" width="100%" height="352" frameBorder="0" scrolling="no" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="spotify-info">
                             <h3>Mãe Solteira</h3>
                             <p class="artista">—</p>
-                            <p class="resultado">+114M plays</p>
+                            <div class="spotify-stats">
+                                <p class="resultado" data-stat="plays">+114M plays</p>
+                                <span class="stat-update" data-stat-updated>Spotify</span>
+                            </div>
                             <span class="badge">🏅 Mais de 2 meses no Top 50 Spotify</span>
                         </div>
                     </div>
-                    <div class="spotify-card">
+                    <!-- Card 3: Álbum CAOS -->
+                    <div class="spotify-card" data-spotify-id="album-caos">
                         <div class="spotify-embed">
-                            <div class="embed-placeholder">
-                                <i class="fab fa-spotify"></i>
-                                <span>[EMBED SPOTIFY — Álbum CAOS]</span>
-                                <small>Adicione o link do embed aqui</small>
-                            </div>
+                            <iframe data-testid="embed-iframe" style="border-radius:12px; overflow:hidden;" src="https://open.spotify.com/embed/album/6fgLXQA1I40kOPXy8G4BK8?utm_source=generator" width="100%" height="352" frameBorder="0" scrolling="no" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="spotify-info">
                             <h3>Álbum CAOS</h3>
                             <p class="artista">Alee</p>
-                            <p class="resultado">+80M plays</p>
+                            <div class="spotify-stats">
+                                <p class="resultado" data-stat="plays">+80M plays</p>
+                                <span class="stat-update" data-stat-updated>Spotify</span>
+                            </div>
                             <span class="badge">Lançado set/2024</span>
                         </div>
                     </div>
-                    <div class="spotify-card">
+                    <!-- Card 4: Party -->
+                    <div class="spotify-card" data-spotify-id="party">
                         <div class="spotify-embed">
-                            <div class="embed-placeholder">
-                                <i class="fab fa-spotify"></i>
-                                <span>[EMBED SPOTIFY — Party]</span>
-                                <small>Adicione o link do embed aqui</small>
-                            </div>
+                            <iframe data-testid="embed-iframe" style="border-radius:12px; overflow:hidden;" src="https://open.spotify.com/embed/track/4Q0j8IUJaSxNROmna9IWWX?utm_source=generator" width="100%" height="352" frameBorder="0" scrolling="no" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="spotify-info">
                             <h3>Party</h3>
                             <p class="artista">Alee</p>
-                            <p class="resultado">+10M plays</p>
+                            <div class="spotify-stats">
+                                <p class="resultado" data-stat="plays">+10M plays</p>
+                                <span class="stat-update" data-stat-updated>Spotify</span>
+                            </div>
                             <span class="badge">🏅 Top 50 Virais Spotify</span>
                         </div>
                     </div>
-                    <div class="spotify-card">
+                    <!-- Card 5: Fujifilm -->
+                    <div class="spotify-card" data-spotify-id="fujifilm">
                         <div class="spotify-embed">
-                            <div class="embed-placeholder">
-                                <i class="fab fa-spotify"></i>
-                                <span>[EMBED SPOTIFY — Fujifilm]</span>
-                                <small>Adicione o link do embed aqui</small>
-                            </div>
+                            <iframe data-testid="embed-iframe" style="border-radius:12px; overflow:hidden;" src="https://open.spotify.com/embed/track/373ix2fcQQoOkwoJPhN7xp?utm_source=generator" width="100%" height="352" frameBorder="0" scrolling="no" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="spotify-info">
                             <h3>Fujifilm</h3>
                             <p class="artista">Franco, The Sir!</p>
-                            <p class="resultado">+5M plays</p>
-                        </div>
-                    </div>
-                    <div class="spotify-card">
-                        <div class="spotify-embed">
-                            <div class="embed-placeholder">
-                                <i class="fab fa-spotify"></i>
-                                <span>[EMBED SPOTIFY — Álbum CHTC?]</span>
-                                <small>Adicione o link do embed aqui</small>
+                            <div class="spotify-stats">
+                                <p class="resultado" data-stat="plays">+5M plays</p>
+                                <span class="stat-update" data-stat-updated>Spotify</span>
                             </div>
-                        </div>
-                        <div class="spotify-info">
-                            <h3>Álbum CHTC?</h3>
-                            <p class="artista">—</p>
-                            <p class="resultado">+3M plays</p>
-                            <span class="badge">Lançamento recente</span>
                         </div>
                     </div>
                 </div>
@@ -272,109 +241,103 @@
                 </button>
                 <div class="carousel-track" id="youtubeCarousel">
                     <div class="youtube-card">
-                        <div class="youtube-thumb">
-                            <div class="thumb-placeholder">
-                                <i class="fab fa-youtube"></i>
-                                <span>[THUMBNAIL — Lourena e Sant]</span>
-                            </div>
-                            <div class="play-overlay">
-                                <i class="fas fa-play"></i>
-                            </div>
+                        <div class="youtube-embed">
+                            <a href="https://www.youtube.com/watch?v=lxhqCcrnTv4" target="_blank" class="youtube-thumb-link">
+                                <img src="https://img.youtube.com/vi/lxhqCcrnTv4/hqdefault.jpg" alt="Lourena e Sant – Dizeres" class="youtube-thumb-img">
+                                <div class="youtube-play-btn">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="youtube-info">
                             <h3>Lourena e Sant – Dizeres (Prod. Leo Casa 1)</h3>
                             <p class="views">+223M views</p>
-                            <a href="#" class="youtube-link" target="_blank">
+                            <a href="https://www.youtube.com/watch?v=lxhqCcrnTv4" class="youtube-link" target="_blank">
                                 <i class="fab fa-youtube"></i> Assistir no YouTube
                             </a>
                         </div>
                     </div>
                     <div class="youtube-card">
-                        <div class="youtube-thumb">
-                            <div class="thumb-placeholder">
-                                <i class="fab fa-youtube"></i>
-                                <span>[THUMBNAIL — MC Neguinho do Kaxeta]</span>
-                            </div>
-                            <div class="play-overlay">
-                                <i class="fas fa-play"></i>
-                            </div>
+                        <div class="youtube-embed">
+                            <a href="https://www.youtube.com/watch?v=o9XUR25BxGo" target="_blank" class="youtube-thumb-link">
+                                <img src="https://img.youtube.com/vi/o9XUR25BxGo/hqdefault.jpg" alt="MC Neguinho do Kaxeta – Louco e Sonhador" class="youtube-thumb-img">
+                                <div class="youtube-play-btn">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="youtube-info">
                             <h3>MC Neguinho do Kaxeta – Louco e Sonhador (GR6 Explode)</h3>
                             <p class="views">+178M views</p>
-                            <a href="#" class="youtube-link" target="_blank">
+                            <a href="https://www.youtube.com/watch?v=o9XUR25BxGo" class="youtube-link" target="_blank">
                                 <i class="fab fa-youtube"></i> Assistir no YouTube
                             </a>
                         </div>
                     </div>
                     <div class="youtube-card">
-                        <div class="youtube-thumb">
-                            <div class="thumb-placeholder">
-                                <i class="fab fa-youtube"></i>
-                                <span>[THUMBNAIL — Jovem Dex]</span>
-                            </div>
-                            <div class="play-overlay">
-                                <i class="fas fa-play"></i>
-                            </div>
+                        <div class="youtube-embed">
+                            <a href="https://www.youtube.com/watch?v=hsAU8467rgY" target="_blank" class="youtube-thumb-link">
+                                <img src="https://img.youtube.com/vi/hsAU8467rgY/hqdefault.jpg" alt="Jovem Dex – NAV" class="youtube-thumb-img">
+                                <div class="youtube-play-btn">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="youtube-info">
                             <h3>Jovem Dex – NAV (Prod. Robert Beats)</h3>
                             <p class="views">+117M views</p>
-                            <a href="#" class="youtube-link" target="_blank">
+                            <a href="https://www.youtube.com/watch?v=hsAU8467rgY" class="youtube-link" target="_blank">
                                 <i class="fab fa-youtube"></i> Assistir no YouTube
                             </a>
                         </div>
                     </div>
                     <div class="youtube-card">
-                        <div class="youtube-thumb">
-                            <div class="thumb-placeholder">
-                                <i class="fab fa-youtube"></i>
-                                <span>[THUMBNAIL — Fabio Brazza feat. Péricles]</span>
-                            </div>
-                            <div class="play-overlay">
-                                <i class="fas fa-play"></i>
-                            </div>
+                        <div class="youtube-embed">
+                            <a href="https://www.youtube.com/watch?v=xAE9OH258AM" target="_blank" class="youtube-thumb-link">
+                                <img src="https://img.youtube.com/vi/xAE9OH258AM/hqdefault.jpg" alt="Fabio Brazza feat. Péricles – Só Uma Noite" class="youtube-thumb-img">
+                                <div class="youtube-play-btn">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="youtube-info">
                             <h3>Fabio Brazza feat. Péricles – Só Uma Noite</h3>
                             <p class="views">+23M views</p>
-                            <a href="#" class="youtube-link" target="_blank">
+                            <a href="https://www.youtube.com/watch?v=xAE9OH258AM" class="youtube-link" target="_blank">
                                 <i class="fab fa-youtube"></i> Assistir no YouTube
                             </a>
                         </div>
                     </div>
                     <div class="youtube-card">
-                        <div class="youtube-thumb">
-                            <div class="thumb-placeholder">
-                                <i class="fab fa-youtube"></i>
-                                <span>[THUMBNAIL — Vulgo FK, Kyan]</span>
-                            </div>
-                            <div class="play-overlay">
-                                <i class="fas fa-play"></i>
-                            </div>
+                        <div class="youtube-embed">
+                            <a href="https://www.youtube.com/watch?v=if8Fm1LAssY" target="_blank" class="youtube-thumb-link">
+                                <img src="https://img.youtube.com/vi/if8Fm1LAssY/hqdefault.jpg" alt="Vulgo FK, Kyan – Mandona / Se eu Te Dissesse" class="youtube-thumb-img">
+                                <div class="youtube-play-btn">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="youtube-info">
                             <h3>Vulgo FK, Kyan – Mandona / Se eu Te Dissesse</h3>
                             <p class="views">+26M views</p>
-                            <a href="#" class="youtube-link" target="_blank">
+                            <a href="https://www.youtube.com/watch?v=if8Fm1LAssY" class="youtube-link" target="_blank">
                                 <i class="fab fa-youtube"></i> Assistir no YouTube
                             </a>
                         </div>
                     </div>
                     <div class="youtube-card">
-                        <div class="youtube-thumb">
-                            <div class="thumb-placeholder">
-                                <i class="fab fa-youtube"></i>
-                                <span>[THUMBNAIL — MC Jvila]</span>
-                            </div>
-                            <div class="play-overlay">
-                                <i class="fas fa-play"></i>
-                            </div>
+                        <div class="youtube-embed">
+                            <a href="https://www.youtube.com/watch?v=9Ifob9rah2k" target="_blank" class="youtube-thumb-link">
+                                <img src="https://img.youtube.com/vi/9Ifob9rah2k/hqdefault.jpg" alt="MC Jvila – Pirocada Quente" class="youtube-thumb-img">
+                                <div class="youtube-play-btn">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="youtube-info">
                             <h3>MC Jvila – Pirocada Quente</h3>
                             <p class="views">+21M views</p>
-                            <a href="#" class="youtube-link" target="_blank">
+                            <a href="https://www.youtube.com/watch?v=9Ifob9rah2k" class="youtube-link" target="_blank">
                                 <i class="fab fa-youtube"></i> Assistir no YouTube
                             </a>
                         </div>
